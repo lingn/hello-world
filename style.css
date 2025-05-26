@@ -1,0 +1,191 @@
+/* Body/General */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav a.active-nav {
+  background-color: #007bff; /* Example active color: blue */
+  color: white;
+}
+
+/* Main Headings (H1) */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section Headings (H2, H4 for series) */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px; /* Align with gallery padding */
+  margin-right: 10px; /* Align with gallery padding */
+}
+
+h4 { /* For tutorial series titles */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+
+/* Video/Tutorial Galleries & Lists */
+#video-gallery,
+#tutorial-list,
+#my-uploads,
+#liked-videos,
+#favorited-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute items evenly */
+  padding: 10px;
+}
+
+/* Video/Tutorial Items */
+.video-item,
+.tutorial-item {
+  border: 1px solid #ddd;
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+  width: 300px; /* Fixed width for items */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* For hover effect */
+}
+
+.video-item:hover,
+.tutorial-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 10px rgba(0,0,0,0.15);
+}
+
+.video-item img,
+.tutorial-item img {
+  width: 100%; 
+  height: 180px; 
+  background-color: #eee; 
+  display: block;
+  margin-bottom: 10px;
+  object-fit: cover; 
+  border-radius: 3px; /* Slightly rounded corners for images */
+}
+
+.video-item h3,
+.tutorial-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  line-height: 1.3; /* Improved line height for titles */
+}
+
+.tutorial-item p { /* Styling for tutorial description */
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.uploader-info {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Button container div */
+.video-item div,
+.tutorial-item div {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
+  gap: 8px; /* Space between buttons */
+}
+
+
+/* Buttons */
+button,
+.like-btn,
+.favorite-btn,
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  background-color: #e7e7e7;
+  color: #333;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+button:hover,
+.like-btn:hover,
+.favorite-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  background-color: #ddd;
+  opacity: 0.9;
+}
+
+/* Active states for Like/Favorite buttons */
+.like-btn.active,
+.favorite-btn.active {
+  background-color: #28a745; /* Green for active, example */
+  color: white;
+  border-color: #28a745;
+}
+
+.like-btn.active:hover,
+.favorite-btn.active:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+
+.edit-btn {
+  background-color: #ffc107; /* Yellow */
+  border-color: #ffc107;
+  color: white;
+}
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Red */
+  border-color: #dc3545;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #c82333;
+}
