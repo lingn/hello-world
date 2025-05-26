@@ -10,7 +10,7 @@ const videos = [
     title: "Epic Parkour Jumps",
     uploaderType: 'user',
     uploaderName: 'TraceurTom',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Epic+Jumps',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=1',
     videoUrl: '#'
   },
   {
@@ -18,7 +18,7 @@ const videos = [
     title: "Urban Flow Masterclass",
     uploaderType: 'admin',
     uploaderName: 'AdminFlow',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Urban+Flow',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=2',
     videoUrl: '#'
   },
   {
@@ -26,7 +26,7 @@ const videos = [
     title: "Rooftop Adventures",
     uploaderType: 'user',
     uploaderName: 'SkyHighSarah',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Rooftop+Adventures',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=3',
     videoUrl: '#'
   },
   {
@@ -34,7 +34,7 @@ const videos = [
     title: "Parkour Basics: Landing",
     uploaderType: 'admin',
     uploaderName: 'ParkourAcademy',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Landing+Basics',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=4',
     videoUrl: '#'
   }
 ];
@@ -45,7 +45,7 @@ const tutorials = [
     title: "Mastering the Safety Vault",
     uploaderType: 'admin',
     uploaderName: 'CoachDave',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Safety+Vault',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=101',
     videoUrl: '#',
     seriesTitle: "Vaulting Techniques 101",
     description: "A step-by-step guide to performing the safety vault correctly and efficiently."
@@ -55,7 +55,7 @@ const tutorials = [
     title: "Introduction to Wall Runs",
     uploaderType: 'user',
     uploaderName: 'WallRunnerWill',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Wall+Runs',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=102',
     videoUrl: '#',
     description: "Learn the fundamentals of wall runs, including approach and takeoff."
   },
@@ -64,7 +64,7 @@ const tutorials = [
     title: "Precision Jumping Explained",
     uploaderType: 'user',
     uploaderName: 'PrecisionPete',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Precision+Jumps',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=103',
     videoUrl: '#',
     seriesTitle: "Advanced Jumping",
     description: "Techniques for accurate and safe precision jumps in various environments."
@@ -74,7 +74,7 @@ const tutorials = [
     title: "Flow & Combinations",
     uploaderType: 'admin',
     uploaderName: 'AdminFlow',
-    thumbnailUrl: 'http://placehold.it/300x180?text=Flow+Combos',
+    thumbnailUrl: 'https://picsum.photos/300/180?random=104',
     videoUrl: '#',
     description: "Tips on linking movements together to create smooth and efficient parkour lines."
   }
