@@ -7,34 +7,31 @@
 <body>
   <h1>Parkour Tutorial Sharing</h1>
   <nav>
-    <a href="index.html">Videos</a>
-    <a href="tutorials.html">Tutorials</a>
-    <a href="profile.html">My Profile</a>
+    <div class="logo">LOGO</div>
+    <div class="nav-right">
+      <button class="upload-btn">上传视频</button>
+    </div>
   </nav>
   <div class="container">
     <div id="tutorial-list">
-      <!-- Tutorials will be listed here -->
-      <div class="tutorial-item">
-      <h4>Series: Beginner Backflips</h4>
-      <img src="" alt="Tutorial Thumbnail">
-      <h3>How to Basic Vault</h3>
-      <p class="uploader-info">Uploaded by: ExpertTracer</p>
-      <div>
-        <button class="like-btn">Like</button>
-        <button class="favorite-btn">Favorite</button>
-      </div>
+      <!-- Tutorials will be listed here by script.js -->
     </div>
-    <div class="tutorial-item">
-      <img src="" alt="Tutorial Thumbnail">
-      <h3>Advanced Wall Run Techniques</h3>
-      <p class="uploader-info">Uploaded by: ProRunner</p>
-      <div>
-        <button class="like-btn">Like</button>
-        <button class="favorite-btn">Favorite</button>
-      </div>
-    </div>
-  </div>
   </div> <!-- Close container -->
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+        <!-- Icon placeholder <i class="icon-videos"></i> -->
+        <span>跑酷视频</span>
+    </a>
+    <a href="tutorials.html" class="bottom-nav-item">
+        <!-- Icon placeholder <i class="icon-tutorials"></i> -->
+        <span>跑酷教程</span>
+    </a>
+    <a href="profile.html" class="bottom-nav-item">
+        <!-- Icon placeholder <i class="icon-profile"></i> -->
+        <span>我的</span>
+    </a>
+  </nav>
   <script src="script.js" defer></script>
 </body>
 </html>

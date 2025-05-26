@@ -7,60 +7,40 @@
 <body>
   <h1>My Profile</h1>
   <nav>
-    <a href="index.html">Videos</a>
-    <a href="tutorials.html">Tutorials</a>
-    <a href="profile.html">My Profile</a>
+    <div class="logo">LOGO</div>
+    <div class="nav-right">
+      <button class="upload-btn">上传视频</button>
+    </div>
   </nav>
   <div class="container">
     <h2>My Uploads</h2>
     <div id="my-uploads">
-      <!-- Uploaded videos will be listed here -->
-      <div class="video-item">
-      <img src="" alt="Video Thumbnail">
-      <h3>My Parkour Training</h3>
-      <div>
-        <button class="edit-btn">Edit</button>
-        <button class="delete-btn">Delete</button>
-      </div>
-    </div>
-    <div class="video-item">
-      <img src="" alt="Video Thumbnail">
-      <h3>Urban Exploration Highlights</h3>
-      <div>
-        <button class="edit-btn">Edit</button>
-        <button class="delete-btn">Delete</button>
-      </div>
-    </div>
+      <!-- Uploaded videos will be listed here by script.js -->
     </div>
     <h2>My Liked Videos</h2>
     <div id="liked-videos">
-      <!-- Liked videos will be listed here -->
-      <div class="video-item">
-      <img src="" alt="Video Thumbnail">
-      <h3>Amazing Parkour Flow</h3>
-      <p class="uploader-info">Uploaded by: User123</p>
-    </div>
-    <div class="video-item">
-      <img src="" alt="Video Thumbnail">
-      <h3>Parkour in the City</h3>
-      <p class="uploader-info">Uploaded by: Admin</p>
-    </div>
+      <!-- Liked videos will be listed here by script.js -->
     </div>
     <h2>My Favorited Videos</h2>
     <div id="favorited-videos">
-      <!-- Favorited videos will be listed here -->
-      <div class="video-item">
-      <img src="" alt="Video Thumbnail">
-      <h3>Advanced Wall Run Techniques</h3>
-      <p class="uploader-info">Uploaded by: ProRunner</p>
-    </div>
-    <div class="video-item">
-      <img src="" alt="Video Thumbnail">
-      <h3>How to Basic Vault</h3>
-      <p class="uploader-info">Uploaded by: ExpertTracer</p>
-    </div>
+      <!-- Favorited videos will be listed here by script.js -->
     </div>
   </div> <!-- Close container -->
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+        <!-- Icon placeholder <i class="icon-videos"></i> -->
+        <span>跑酷视频</span>
+    </a>
+    <a href="tutorials.html" class="bottom-nav-item">
+        <!-- Icon placeholder <i class="icon-tutorials"></i> -->
+        <span>跑酷教程</span>
+    </a>
+    <a href="profile.html" class="bottom-nav-item">
+        <!-- Icon placeholder <i class="icon-profile"></i> -->
+        <span>我的</span>
+    </a>
+  </nav>
   <script src="script.js" defer></script>
 </body>
 </html>
