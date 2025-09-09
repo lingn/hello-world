@@ -1,0 +1,337 @@
+/* Body/General */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Slightly lighter background */
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 10px 20px; /* Added horizontal padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between nav items and upload button */
+}
+
+nav a { /* Top navigation links */
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px; /* Adjusted padding */
+  display: inline-block;
+  border-radius: 5px; /* Updated border-radius */
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav a.active-nav { /* This class is for the old top nav links, might be unused now */
+  background-color: #007bff; 
+  color: white;
+}
+
+.upload-btn {
+  background-color: #ff8c00; 
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px; /* Updated border-radius */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-out;
+}
+
+.upload-btn:hover {
+  background-color: #cc7000; /* Darker orange on hover */
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.bottom-nav-item {
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.bottom-nav-item span {
+  display: block;
+  font-size: 0.9em;
+}
+
+.bottom-nav-item.active-bottom-nav span { /* More specific selector for active text */
+  color: #ff8c00; /* Example active color: DarkOrange */
+  font-weight: bold;
+}
+/* Optional: if you add icons and want them to also change color */
+.bottom-nav-item.active-bottom-nav i {
+  color: #ff8c00;
+}
+
+
+/* Main Headings (H1) */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section Headings (H2, H4 for series) */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px; /* Align with gallery padding */
+  margin-right: 10px; /* Align with gallery padding */
+}
+
+h4 { /* For tutorial series titles */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+
+/* Video/Tutorial Galleries & Lists */
+#video-gallery,
+#tutorial-list,
+#my-uploads,
+#liked-videos,
+#favorited-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Changed from space-around for predictable gap */
+  padding: 10px; /* Keep some padding for the container itself */
+  gap: 20px; /* Uniform gap between items */
+}
+
+/* Video/Tutorial Items */
+.video-item,
+.tutorial-item {
+  border: 1px solid #e0e0e0; /* Slightly lighter border */
+  background-color: white;
+  padding: 15px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 220px; 
+  min-width: 220px; 
+  max-width: 280px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.04); /* Softer, layered shadow */
+  box-sizing: border-box;
+  border-radius: 8px; /* Consistent border-radius for the card */
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; /* Smooth transition, ease-out */
+}
+
+.video-item:hover,
+.tutorial-item:hover {
+  transform: translateY(-4px); /* Slightly less lift for a more subtle effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.06); /* Enhanced shadow on hover */
+}
+
+/* Uploader Avatar in card */
+.uploader-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  object-fit: cover; /* Ensure avatar images cover the space */
+}
+
+/* Header for avatar and title */
+.video-info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Space below avatar/title group */
+}
+.video-info-header h3 {
+  margin-bottom: 0; /* Remove default h3 margin */
+  flex-grow: 1; /* Allow title to take available space */
+}
+
+
+.video-item img,
+.tutorial-item img {
+  width: 100%; 
+  height: 180px; 
+  background-color: #eee; 
+  display: block;
+  margin-bottom: 10px;
+  object-fit: cover; 
+  border-radius: 3px; /* Slightly rounded corners for images */
+}
+
+.video-item h3,
+.tutorial-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  line-height: 1.3; /* Improved line height for titles */
+}
+
+.tutorial-item p { /* Styling for tutorial description */
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.uploader-info {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 8px; /* Adjusted margin */
+  margin-left: 38px; /* Align with title if avatar is present, or adjust as needed */
+}
+
+/* Item Metadata */
+.item-meta {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 8px; /* Adjusted margin */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px; /* Row gap and column gap */
+  margin-left: 38px; /* Align with title if avatar is present, or adjust as needed */
+}
+
+.publish-date, .views, .favorites-count, .duration {
+  /* Individual styling if needed, e.g., icons */
+}
+
+/* Item Tags */
+.item-tags {
+  margin-bottom: 10px; /* Adjusted margin */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: 38px; /* Align with title if avatar is present, or adjust as needed */
+}
+
+.tag-item {
+  background-color: #e9ecef; /* Slightly different gray for tags */
+  padding: 3px 8px; /* Slightly more padding */
+  border-radius: 5px; /* Updated border-radius */
+  font-size: 0.75em;
+  color: #495057; /* Darker text for tags for better contrast on lighter bg */
+}
+
+
+/* Button container div */
+.video-item div:last-child, /* Target the div holding action buttons */
+.tutorial-item div:last-child {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-left: 30px; /* Align buttons slightly to the right of avatar */
+}
+
+
+/* Buttons */
+button,
+.like-btn,
+.favorite-btn,
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px; 
+  border: 1px solid #d8dde2; /* Lighter, more neutral border */
+  background-color: #f8f9fa; /* Match body or slightly off-white */
+  color: #343a40; /* Darker text for better contrast */
+  cursor: pointer;
+  margin-right: 5px; /* Retain for spacing if needed, though gap on parent is better */
+  border-radius: 5px; /* Updated border-radius */
+  display: inline-flex; 
+  align-items: center;
+  gap: 5px; 
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.like-btn .icon, .favorite-btn .icon {
+  font-size: 1.1em; /* Make icon slightly larger */
+}
+.like-btn .text, .favorite-btn .text {
+  font-size: 0.9em;
+}
+
+
+button:hover,
+.like-btn:hover,
+.favorite-btn:hover,
+.edit-btn:hover, /* General hover for non-active/non-special buttons */
+.delete-btn:hover { /* General hover for non-active/non-special buttons */
+  background-color: #e9ecef; /* Light gray hover */
+  border-color: #ced4da;
+}
+
+/* Active states for Like/Favorite buttons */
+/* The .active class itself doesn't change background, border, or text color of the button */
+/* It primarily serves as a hook for the icon color change */
+.like-btn.active .icon {
+  color: #28a745; /* Green icon for active like */
+}
+.favorite-btn.active .icon {
+  color: #ffc107; /* Yellow icon for active favorite */
+}
+
+/* Hover states for active like/favorite buttons can be more subtle or match general hover */
+.like-btn.active:hover,
+.favorite-btn.active:hover {
+  background-color: #e9ecef; 
+  border-color: #ced4da;
+}
+
+
+.edit-btn { /* Specific styling for Edit button */
+  background-color: #ffc107; 
+  border-color: #ffc107;
+  color: #212529; /* Dark text on yellow for better readability */
+}
+.edit-btn:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.delete-btn { /* Specific styling for Delete button */
+  background-color: #dc3545; 
+  border-color: #dc3545;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
